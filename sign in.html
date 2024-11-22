@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In page</title>
+    <link rel="stylesheet" href="sign in .css" />
+  </head>
+
+  <body>
+    <div class="login-container">
+      <h1>Sign In</h1>
+      <form onsubmit="return mydata()" action="Home.html">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" id="a1" name="email" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="a2" name="password" required />
+        </div>
+        <button href="Home.html.html" type="submit" class="login-btn">
+          Sign In
+        </button>
+      </form>
+    </div>
+    <script>
+      function mydata() {
+        var a = document.getElementById("a1").value;
+        var b = document.getElementById("a2").value;
+        if (a == "" || b == "") {
+          alert("All field are mandatory");
+          return false;
+        } else {
+          true;
+        }
+      }
+    </script>
+  </body>
+</html>

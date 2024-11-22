@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+.mt-bottun{
+    text-decoration: underline;
+    background-color:rgb(64, 64, 163);
+    color: #f8f3f3;
+    height: 30px;
+    width:20px;
+    padding:15px 20px;
+    border-radius:8px;
+    box-shadow: 3px 8px 25px #005bb5;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color:rgb(48, 48, 199);
+    color: #141414;
+    height: 50px;
+    width:30px;
+    padding:15px 20px;
+    border-radius:8px;
+}
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #112538;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.join-btn {
+    background-color: #0073e6;
+    color: white;
+    text-decoration:none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-btn:hover {
+    background-color: #005bb5;
+    transition: transform ease;
+    transform: scale(1.050);
+    box-shadow: -5px 4px 25px #aaa;
+}
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.autoplay-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+}
+
+.overlay h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions button {
+    background-color: #2d3033;
+    color: white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.actions .icon-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #005bb5;
+}
+.movies-section {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.movie-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+.movie-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    
+    background-color: #333;
+    cursor: pointer;
+}
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:10px;
+}
+.movie-card:hover{
+    padding: 3px 2px ;
+    transition: transform ease;
+    transform: scale(1.080);
+    box-shadow: 0px 30px 20px antiquewhite;}
+
+footer {
+        background-color: #0F171E;
+        padding: 20px;
+        text-align: center;
+        color: #aaa;}
+
+

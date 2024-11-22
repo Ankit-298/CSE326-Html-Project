@@ -1,0 +1,27 @@
+.icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text {
+    /* Styling for the text, if needed */
+    font-size: 20px;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rotate-icon 2s infinite linear;
+  }
+  
+  @keyframes rotate-icon {
+    0% {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }
+  

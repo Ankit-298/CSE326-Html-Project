@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(7, 36, 59);
+    width: 100%;    
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+    right: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(48, 48, 199);
+    color: #141414;
+    height: 50px;
+    width: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+.account1{
+    position: relative;
+    top:0px;
+    right:110px;
+}
+
+.account .join-btn {
+    background-color: #0071EB;
+    color: white;
+    padding: 15px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    left: 110px;
+    top:0px;
+}
+
+.account .join-btn:hover {
+    background-color: #005bb5;
+    height: 15px;
+    width: 20px;
+    padding: 15px 15px;
+    transition: transform ease;
+    transform: scale(1.050);
+    box-shadow: -5px 4px 25px #aaa;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #141414;
+}
+
+.welcome-text {
+    max-width: 50%;
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sign-in-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.movies-posters {
+    display: flex;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 0px 0px;
+}
+
+.poster img {
+    height: 200px;
+    border-radius: 30px;
+}
+
+.poster img:hover {
+    transition: transform ease;
+    transform: scale(1.060);
+    cursor: pointer;
+    box-shadow: 8px 10px 30px antiquewhite;
+    padding: none;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #0F171E;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+.conditions{
+    display:flex;
+    justify-content:center;
+   text-decoration:none;
+   height:10px;
+   text-size-adjust:20px;
+}
+
+#search-form {
+    display: flex;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1121b3;
+    border-radius: 4px;
+    width: 300px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(24, 70, 24);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #3311cc;
+    box-shadow: 2px 3px 25px rgb(180, 139, 214);
+}
+
+.rentals-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #141414;
+}
+
+.rental-content {
+    max-width: 50%;
+}
+
+.rental-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.rental-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.rent-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.movie-posters {
+    display: flex;
+    gap: 20px;
+}
+.poster img {
+    height: 200px;
+    border-radius: 10px;
+}
+.container {
+    padding: 50px;
+}
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.channels {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 80%;
+    margin: 0px;
+    margin-left: -3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.channelimg1 img {
+    background-color: #1e2a38;
+    padding: 10pxpx 20px;
+    border-radius: 20px;
+    width: 260px;
+    height: 250px;
+    margin: 0px
+}
+.channelimg1:hover {
+    padding: 3px 2px;
+    transition: transform ease;
+    transform: scale(1.050);
+    border-radius: 20px;
+    background: linear-gradient(200deg, rgb(88, 63, 90), rgb(20, 20, 83));
+    box-shadow: 4px 5px 20px rgb(132, 104, 177);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video Clone</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" type="image/png" href="play.png">
+</head>
+
+<body>
+    <header>
+        <img src="play.png" height="53" width="53">
+        <div class="logo">Dot Flixer</div>
+        <form id="search-form" onsubmit="searchFunction(event)">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <nav>
+            <div class="menu">
+                <a href="http://127.0.0.1:3000/project/Home.html">Home</a>
+                <a href="http://127.0.0.1:3000/project/movies.html">Movies</a>
+                <a href="http://127.0.0.1:3000/project/tvshow.html">TV Shows</a>
+                <a href="#ott">OTTs</a>
+            </div>
+        </nav>
+        <div class="account">
+            <a href="http://127.0.0.1:3000/project/sign in.html" class="join-btn">Join Prime</a>
+        </div>  
+            <div class="account1">
+             <img src="account.png" height="60" width="60" >
+            </div>
+        
+    </header>
+
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h1>Welcome to Prime Video</h1>
+            <p>Join Prime to watch the latest movies, TV shows and award-winning Amazon Originals</p>
+            <button class="sign-in-btn">Watch Now</button>
+        </div>
+        <div class="movies-posters">
+            <div class="poster">
+                <img src="Kalki.jpg" alt="Kalki Poster">
+            </div>
+            <div class="poster">
+                <img src="Stree_2.jpg" alt="Stree 2 Poster">
+            </div>
+            <div class="poster">
+                <img src="GOAT.jpg" alt="Goat Poster">
+            </div>
+        </div>
+    </section>
+    <section class="rentals-section">
+        <div class="rental-content">
+            <h1>Movie rentals on Prime Video</h1>
+            <p>Early Access to new movies, before digital subscription</p>
+            <button class="rent-btn">Rent now</button>
+        </div>
+        <div class="movie-posters">
+            <div class="poster">
+                <img src="tommorow war.png" alt="The Tomorrow war Movie Poster">
+            </div>
+            <div class="poster">
+                <img src="interstellar.jpg" alt="interstellar Poster">
+            </div>
+            <div class="poster">
+                <img src="Martian.jpg" alt="martin Poster">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="title">
+            <h1>Free OTTs all in one place</h1>
+        </div>
+
+        <div id="ott"></div>
+          <div class="channels">
+            <div class="channelimg1"><a href="https://www.amazon.in/minitv"><img src="mini tv.jpg" alt="mini tv"></a>
+            </div>
+            <div class="channelimg1"><a href="https://www.mxplayer.in"><img src="mxplayer2.webp" alt="mxplayer"></a>
+            </div><br>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <a href="#" class="conditions">Terms and Privacy Notice </a><br>
+        <p>© 2024 Prime Video Clone. All Rights Reserved.</p>
+        <p>Created By Ankit Kumar</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Icon Around Text</title>
+    <style>
+        /* Container for the text and icon */
+        .orbit-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+        }
+
+        /* The text in the center (Sun) */
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* The orbiting icon (Earth) */
+        .orbit-icon {
+            position:absolute;
+            top: 0;
+            left: 50%;
+            transform-origin: -50% 100px; /* Adjusts the orbit's radius */
+            animation: orbit 5s linear infinite; /* Adjust time for orbit speed */
+        }
+
+        /* Keyframes for the orbit animation */
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg) translateX(-30px);
+            }
+            100% {
+                transform: rotate(360deg) translateX(-30px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="orbit-container">
+        <!-- The Sun (center text) -->
+        <div class="center-text">prime video</div>
+
+        <!-- The Earth (orbiting icon) -->
+        <div class="orbit-icon">
+            <img src="play.png" alt="Earth" width="30" height="30">
+        </div>
+    </div>
+
+</body>
+</html>
